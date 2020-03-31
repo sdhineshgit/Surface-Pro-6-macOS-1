@@ -1,262 +1,185 @@
+ Surface Pro 6 Black Apple CLOVER profile, world premiere
 
-<h2>Surface Pro 6 黑苹果  CLOVER 配置文件,全球首发</h2>
-<p>MacBook Pro之后，Surface Pro6 是我非常喜欢的一款机器，主机770g+键盘310g+笔20g = 1100g！非常轻便。基于对Surface Pro6的喜欢我做了4个教程来帮助更多Surface Pro6用户无忧折腾。</p><blockquote>
-<p>Surface Pro6超详细教程一共有4个系列：</p>
-<p><a href="http://www.macoshome.com/hackintosh/hcourse/1334.html" target="_blank">Surface Pro 6超详细教程之安装windows10和黑苹果macOS 10.14双系统；</a></p>
+After the MacBook Pro, the Surface Pro6 is a machine I really like. The host is 770g + keyboard 310g + pen 20g = 1100g! Very lightweight. Based on my love of Surface Pro6, I have made 4 tutorials to help more Surface Pro6 users worry free.
 
+    Surface Pro6 super detailed tutorial has a total of 4 series:
 
-<p><b>以上系列教程非授权禁止转载。</b></p>
-</blockquote>
+    Surface Pro 6 ultra-detailed tutorial with dual installation of windows10 and black apple macOS 10.14;
 
-<h3>配置信息</h3>
-<ul>
-  <li>品牌型号：Microsoft Surface Pro 6 无风扇版</li>
-  <li>CPU： Core i5-8250U</li>
-  <li>显卡：UHD Graphics 620 128MB</li>
-  <li>内存：8GB</li>
-  <li>声卡：ALC298</li>
-  <li>显示屏：LGD0555 12.3 英寸</li>
-  <li>显示屏比例：3:2</li>
-  <li>分辨率： 2736 x 1824</li>
-  <li>硬盘：	SK HYNIX Skhynix BC501 NVMe 128GB</li>
-</ul>
-<h4>关于卡在田字牌解决办法：</h4>
-<p>关于重启卡在田字logo界面的两种终极解决方法：
+    Reprinting of the above series of tutorials is not authorized. 
 
-1.在win下用DG进入ESP分区，把三个.开头的目录全部删除，然后关机等20-60秒再开机就可以进入clover引导。如果还不能进入clover界面，继续强制关机之后等1分钟再开机就可以进入。
+Configuration information
 
-2.如果你的EFI是安装在移动设备上，强制关机后扒掉移动存储设备再插入开机即可识别。
+    Brand model: Microsoft Surface Pro 6 fanless version
+    CPU: Core i5-8250U
+    Graphics: UHD Graphics 620 128MB
+    Memory: 8GB
+    Sound Card: ALC298
+    Display: LGD0555 12.3 inches
+    Display ratio: 3: 2
+    Resolution: 2736 x 1824
+    Hard Drive: SK HYNIX Skhynix BC501 NVMe 128GB 
 
-另外在安装好黑苹果后，所有的EFI文件更新都要在macOS下进行操作就基本不会遇到这种情况，不管你的EFI安装在那个设备上。</p>
+About the solution of the card in Tianzi:
 
-<h4>关于WiFi的解决办法：</h4>
-<p>使用COMFAST USB无线网卡，型号：COMFAST CF-915AC、 COMFAST CF-811AC、COMFAST CF-WU810N</p>
-<p>使用这个驱动很稳定：链接:https://pan.baidu.com/s/1aaUNqg6BJxlPxeq4WoTgSw  密码:y9b0</p>
+Two ultimate solutions for restarting stuck in the Tian word logo interface:
 
-<h4>关于蓝牙的解决办法：</h4>
-<p>使用绿联的USB蓝牙（白色不带挂绳孔款 CSR8510 A10芯片），macOS系统直接免驱动，插上即可识别，可以同时多个连接键盘、鼠标、耳机，AirPods2(完美)。</p>
+1. Under Win, use DG to enter the ESP partition, delete all three directories at the beginning, and then shut down and wait for 20-60 seconds and then boot up to enter clover boot. If you still can't enter the clover interface, continue to force shut down and wait for 1 minute before turning it on again.
 
-<h4>关于无线网卡蓝牙二合一USB设备：</h4>
-	<p>悦智人心5G无线网卡蓝牙二合一usb设备经Pro6用户chase69测试反馈蓝牙无法使用</p>
+2. If your EFI is installed on a mobile device, remove the mobile storage device after forced shutdown and then plug it in to identify it.
 
+In addition, after installing the black apple, all EFI file updates must be performed under macOS, and this situation will not be encountered, no matter which EFI is installed on the device.
 
-<h4>关于使用USB蓝牙/无线鼠标键盘卡顿解决办法：</h4>
-<p>使用一个带供电的USB3.0 集线器和一个USB2.0集线器日常使用表现良好，USB3.0 HUB(0.6米)上插1TB SSD U盘；USB2.0 HUB(0.2米)插：USB无线网卡、USB蓝牙接收器、无线鼠标/机械键盘。</p>
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/USBly.jpg" />
+Solutions for WiFi:
 
-<p>如果你跟我一样使用的是to go系统并且会在Surface Pro6上使用，USB3.0集线器最好买RTS5411芯片带供电的，可以杜绝突然重启。</p>
+Use COMFAST USB wireless network card, model: COMFAST CF-915AC, COMFAST CF-811AC, COMFAST CF-WU810N
 
-<h4>触摸板启用方法：</h4>
-<p>把EFI/CLOVER/OEM/Surface Pro 6/UEFI/kexts/内的VoodooI2C.kext、VoodooI2CHID.kext两个文件，放入 /System/Library/Extensions/ 目录下然后重建缓存就能完美使用触控板。</p>
-<p> /System/Library/Extensions/ 在你的系统中文路径为：macOS/系统/资源库/Extensions/</p>
+Using this driver is very stable: link: https://pan.baidu.com/s/1aaUNqg6BJxlPxeq4WoTgSw password: y9b0
+About Bluetooth solution:
 
-<h4>外接显示器模糊解决方法：</h4>
-<p>请前往：<a href="https://www.jianshu.com/p/9c9dd3488597" target="_blank">Surface Pro6黑苹果外接显示器开启原生HiDPi显示效果</a> 按照教程即可一键开启HIDPI，完美解决外接显示模糊的问题。</p>
-<h3>Surface Pro6 专用黑苹果镜像</h3>
-<P>Surface Pro6 安装镜像：<A HREF="#" target="_blank">Surface Pro6 黑苹果镜像 macOS Mojave 10.14.6 正式版 with Clover 4968</A></p>
+Using Green Alliance's USB Bluetooth (white without lanyard hole CSR8510 A10 chip), the macOS system is directly driver-free and can be identified by plugging in. It can connect multiple keyboards, mice, headphones, AirPods2 (perfect) simultaneously.
+About wireless network card Bluetooth 2-in-1 USB device:
 
-<p>关于10.14.4安装完后用config-Instll进入系统无限重启的，请在CLOVER界面光标移到macOS图标上按空格进入引导设置界面，选择“Block injected kexts”进入禁止加载驱动界面，选择10.14驱动目录，然后勾选“SMCBatteryManager.kext” 即可禁用电池驱动，按ESC回到主界面选择config-Intall进系统进行重建缓存。</li>
+Yuezhirenxin 5G wireless network card Bluetooth 2-in-1 USB device tested by Pro6 user chase69 feedback that Bluetooth cannot be used
+About using USB Bluetooth / Wireless Mouse Keyboard Stalling Solution:
 
-<h3>更新信息：</h3>
-<p>请在macOS用Clover Configurator 打开黑苹果配置所在的EFI分区，然后删除 EFI/目录下BOOT、CLOVER 这个两个目录，再把下载好的EFI文件内BOOT、CLOVER 目录拖到系统 EFI/目录下完成更新。</p>
+Use a powered USB3.0 hub and a USB2.0 hub to perform well in daily use. USB3.0 HUB (0.6m) plugged into a 1TB SSD U disk; USB2.0 HUB (0.2m) plug: USB wireless network card, USB Bluetooth receiver, wireless mouse / mechanical keyboard.
 
-<p>2019/05/10：由于前段时间手里的CHIPFANCIER NANO 1TB SSD报废导致这几年存储的所有照片、设计素材等等数据都没有了。这段时间也没有心思去折腾，这两天才刚刚配好新装备做好可用的系统，特地来更新一小波。由于原CLOVER主题太大（28MB）会影响启动速度，特地设计了一个新的4K主题，整个文件大小4MB左右，默认背景可以自由更换。</p>
-<ul>
-  等有时间了再发10.15配置
-  <li>2019-09-08：
-  <ul>
-    <li>v2.3</li>
-    <li>更新 CLOVER 4968</li> 
-    <li>更新macOS 10.14 - 10.14.6 全系列支持</li> 
-    <li>更新macOS 10.14 - 10.14.6 全系列SD卡支持</li> 
-    <li>更新AppleALC</li> 
-    <li>更新Lilu</li> 
-    <li>更新WhateverGreen</li> 
-  </ul>
-  </li>
-  <li>2019-05-26：
-  <ul>
-    <li>v2.2</li>
-    <li>更新 CLOVER 4934</li> 
-    <li>支持 macOS 10.14.5</li> 
- 
-  </ul>
-  </li>
-  <li>2019-05-10：
-  <ul>
-    <li>v2.1</li>
-    <li>更新 CLOVER 4928</li> 
-    <li>更新 VirualSMC 1.0.3</li> 
-    <li>加入新的默认主题 XBlue</li> 
-  </ul>
-  </li>
+If you use the to go system like me and will use it on Surface Pro6, USB3.0 hub is best to buy RTS5411 chip with power supply, which can prevent sudden restart.
+How to enable the touchpad:
 
-  <li>2019-04-24：
-  <ul>
-    <li>v2.0</li>
-    <li>更新 CLOVER 4922</li> 
-    <li>修复开机第二阶段驱动显卡时横向小花屏问题</li> 
-    <li>增加一个Config-D-Display.plist文件，外接显示器用，可以通过调节亮度或者合上键盘盖关闭内屏</li> 
-    <li>截止目前最稳定的EFI版本</li> 
-  </ul>
-  </li>
+Put the two files VoodooI2C.kext and VoodooI2CHID.kext in EFI / CLOVER / OEM / Surface Pro 6 / UEFI / kexts / into the / System / Library / Extensions / directory and then rebuild the cache to use the touchpad perfectly.
 
-  <li>2019-04-22：
-  <ul>
-    <li>v1.9.2</li>
-    <li>修复10.14.2无限重启的问题</li> 
-    <li>使用原生变频</li> 
-    <li>移除 CPUFriend.kext</li>
-    <li>移除 CPUFriendDataProvider.kext</li>
-  </ul>
-  </li>
+/ System / Library / Extensions / The Chinese path in your system is: macOS / System / Resource Library / Extensions /
+External display blur solution:
 
-  <li>2019-04-16：
-  <ul>
-    <li>v1.9.1</li>
-    <li>更新 VoodooI2c 2.1.5 </li>
-    <li>更新 AppleALC 1.3.7</li>
-    <li>更新 WhateverGreen 1.2.8</li>
-    <li>加入 SMCBatteryManager.kext</li>
-    <li>移除 ACPIBatteryManager.kext</li>
-  </ul>
-  </li>
+Please go to: Surface Pro6 Black Apple External Display Turn on the native HiDPi display effect Follow the tutorial to turn on HIDPI with one click, which perfectly solves the problem of blurred external display.
+Black Apple Mirror for Surface Pro6
 
-  <li>2019-04-08：
-  <ul>
-    <li>v1.9</li>
-    <li>更新 CLOVER 4919</li>
-    <li>修复进入系统第一阶段苹果图标大小显示</li>
-    <li>去除载入CLOVER前的版本提示</li>
-    <li>去除默认配置文件EDID注入信息</li>
-  </ul>
-  </li>
+Surface Pro6 installation image: Surface Pro6 black apple image macOS Mojave 10.14.6 official version with Clover 4968
 
-  <li>2019-04-02：
-  <ul>
-    <li>v1.8</li>
-    <li>更新 CLOVER 4915</li>
-    <li>更新 drivers64UEFI 驱动
-        <ul>
-          <li>添加 AudioDxe-64.efi</li>
-        </ul>
-    </li>
+For the 10.14.4 installation with config-Instll to enter the infinite restart of the system, please move the cursor to the macOS icon on the CLOVER interface and press the space to enter the boot setting interface, select "Block injected kexts" to enter the interface for prohibiting the driver, and select the 10.14 driver directory , Then check "SMCBatteryManager.kext" to disable the battery driver, press ESC to return to the main interface and select config-Intall into the system to rebuild the cache.
+Update information:
 
-  </ul>
-  </li>
-  <li>2019-03-31：
-  <ul>
-    <li>v1.7</li>
-    <li>更新 CLOVER 4912</li>
-    <li>更新 liu 1.3.5</li>
-    <li>更新 AppleALC 1.3.6</li>
-    <li>更新 USBInjectAll 0.7.1</li>
-    <li>取消最低800MHz档位变频</li>
-    <li>重新生成新变频文件</li>
+Please use Clover Configurator on macOS to open the EFI partition where the black apple configuration is located, then delete the BOOT and CLOVER directories under the EFI / directory, and then drag the BOOT and CLOVER directories in the downloaded EFI file to the system EFI / directory to complete the update. .
 
-  </ul>
-  </li>
-  <li>2019-03-29：
-  <ul>
-    <li>v1.6</li>
-    <li>更新 CLOVER 4910</li>
-    <li>修复亮度保存</li>
-    <li>精简并更新 drivers64UEFI
-        <ul>
-          <li>去除 AudioDxe-64.efi</li>
-          <li>去除 Fat-64.efi</li>
-          <li>去除 UsbKbDxe-64.efi</li>
-          <li>去除 UsbMouseDxe-64.efi</li>
-          <li>去除 VBoxHfs-64.efi</li>  
-          <li>更新 EmuVariableUefi-64.efi</li> 
-          <li>更新 HFSPlus.efi</li> 
-        </ul>
-      </li>
-    <li>去除 CodecCommander.kext</li>
-    <li>去除 VoodooPS2Controller.kext</li>
-    <li>增加 VoodooI2C.kext</li>
-    <li>增加 VoodooI2CHID.kext</li>
-    <li>VoodooI2C.kext、VoodooI2CHID.kext两个文件，放入 /System/Library/Extensions/ 目录下然后重建缓存就能使用触控板</li>
-  </ul>
-  </li>
-  <li>2019-03-26:
-   <ul>
-     <li>v1.5</li>
-     <li>更新CLOVER 4903</li>
-     <li>支持10.14.4正式版</li>
-     <li>安装10.14.4更新过程中重启多次的时候必须选择config-Install配置文件，等更新完成进入系统后一定要重建缓存，重建缓存完成后就可以重启使用默认配置文件进入系统</li>
-   </li>
-   </ul>
-  </li>
-  <li>2019-03-22:
-   <ul>
-     <li>v1.4</li>
-     <li>更新CLOVER 4901</li>
-     <li>默认启动系统为macOS，请确保你按照教程把macOS分区名称格式为macOS，否则你需要自行修改</li>
-  
-  </ul></li>
+2019/05/10: As the CHIPFANCIER NANO 1TB SSD was scrapped some time ago, all photos, design materials and other data stored in these years are gone. During this period of time, I didn't have to worry about it. In the past two days, I have just equipped new equipment to make a usable system and specially updated a wavelet. Because the original CLOVER theme is too large (28MB), it will affect the startup speed. A new 4K theme is specially designed. The entire file size is about 4MB. The default background can be changed freely.
 
-  <li>2019-03-15:
-  <ul>
-    <li> v1.3</li>
-    <li> 更新CLOVER 4896</li>
-  </ul>
-  </li>
-  <li>2019-02-24:
-    <ul>
-      <li>v1.2</li>
-      <li>仿冒一个无用的en0网卡，使USB无线网卡可以通过Apple ID验证</li>
-    </ul>
-  </li>  
-  <li>2019-02-23:
-   <ul><li>v1.1</li></ul></li>
-  <li>2019-02-21:
-      
-   <ul><li>v1.0</li></ul></li>
-   </li>
-</ul>
+    Wait for time to send 10.15 configuration
+    2019-09-08:
+        v2.3
+        Update CLOVER 4968
+        Updated macOS 10.14-10.14.6 full series support
+        Updated macOS 10.14-10.14.6 full series SD card support
+        Update AppleALC
+        Update Lilu
+        Update WhateverGreen 
+    2019-05-26:
+        v2.2
+        Update CLOVER 4934
+        Supports macOS 10.14.5 
+    2019-05-10:
+        v2.1
+        Update CLOVER 4928
+        Update VirualSMC 1.0.3
+        Add new default theme XBlue 
+    2019-04-24:
+        v2.0
+        Update CLOVER 4922
+        Fixed the problem of small horizontal screen when driving the graphics card in the second stage of booting
+        Add a Config-D-Display.plist file for external display. You can close the internal screen by adjusting the brightness or closing the keyboard cover.
+        By far the most stable EFI version 
+    2019-04-22:
+        v1.9.2
+        Fix 10.14.2 infinite restart problem
+        Use native frequency conversion
+        Remove CPUFriend.kext
+        Remove CPUFriendDataProvider.kext 
+    2019-04-16:
+        v1.9.1
+        Update VoodooI2c 2.1.5
+        Update AppleALC 1.3.7
+        Update WhateverGreen 1.2.8
+        Added SMCBatteryManager.kext
+        Remove ACPIBatteryManager.kext 
+    2019-04-08:
+        v1.9
+        Update CLOVER 4919
+        Fix Apple icon size display when entering system first stage
+        Remove version prompt before loading CLOVER
+        Remove the default profile EDID injection information 
+    2019-04-02:
+        v1.8
+        Update CLOVER 4915
+        Update drivers64UEFI driver
+            Add AudioDxe-64.efi 
+    2019-03-31:
+        v1.7
+        Update CLOVER 4912
+        Update liu 1.3.5
+        Update AppleALC 1.3.6
+        Update USBInjectAll 0.7.1
+        Cancel the lowest 800MHz frequency conversion
+        Regenerate new frequency conversion file 
+    2019-03-29:
+        v1.6
+        Update CLOVER 4910
+        Fix brightness save
+        Streamline and update drivers64UEFI
+            Remove AudioDxe-64.efi
+            Remove Fat-64.efi
+            Remove UsbKbDxe-64.efi
+            Remove UsbMouseDxe-64.efi
+            Remove VBoxHfs-64.efi
+            Update EmuVariableUefi-64.efi
+            Update HFSPlus.efi 
+        Remove CodecCommander.kext
+        Remove VoodooPS2Controller.kext
+        Added VoodooI2C.kext
+        Added VoodooI2CHID.kext
+        VoodooI2C.kext and VoodooI2CHID.kext, put them in the / System / Library / Extensions / directory and rebuild the cache to use the touchpad 
+    2019-03-26:
+        v1.5
+        Update CLOVER 4903
+        Support 10.14.4 official version
+        You must select the config-Install configuration file when restarting multiple times during the installation of the 10.14.4 update. After the update is completed, you must rebuild the cache. After the cache is rebuilt, you can restart the system using the default configuration file 
+    2019-03-22:
+        v1.4
+        Update CLOVER 4901
+        The default boot system is macOS, please make sure you follow the tutorial to format the macOS partition name as macOS, otherwise you need to modify it yourself 
+    2019-03-15:
+        v1.3
+        Update CLOVER 4896 
+    2019-02-24:
+        v1.2
+        Counterfeit a useless en0 network card so that the USB wireless network card can pass Apple ID verification 
+    2019-02-23:
+        v1.1 
+    2019-02-21:
+        v1.0 
 
-<h3>目前完成：</h3>
-<ul>
-  <li>内屏显示内建正常；</li>
-  <li>亮度调节正常；</li>
-  <li>外接HDMI正常，可以同时使用内屏；</li>
-  <li>ALC298内建正常；</li>
-  <li>内置SD卡槽正常；</li>
-  <li>休眠睡眠唤醒正常；</li>
-  <li>内建假冒en0网卡；</li>
-  <li>Siri使用正常；</li> 
-  <li>iCloud登陆正常；</li>
-  <li>App Store登陆正常，下载正常；</li>
-  <li>iMessage登陆正常</li>
-  <li>电源按键正常，按三秒显示关键菜单，按一秒开关屏幕</li>  
-  <li>触控板正常</li> 
-  </ul>
+Currently completed:
 
-<h3>未进行项目：</h3>
-<ul>
-<li>音量+-按键；</li>
-<li>电量显示；</li>
-<li>全球暂时无解：触摸屏、内置蓝牙、内置WiFi、摄像头；</li>
-<li>期待你的完善分享！</li>
-</ul>
+    Internal screen display is normal;
+    Brightness adjustment is normal;
+    The external HDMI is normal, and the internal screen can be used at the same time;
+    ALC298 is built-in normally;
+    Built-in SD card slot is normal;
+    Hibernation
+    Built-in fake en0 network card;
+    Siri is used normally;
+    iCloud login is normal;
+    App Store login is normal, download is normal;
+    iMessage login is normal
+    The power button is normal. Press the key for three seconds to display the key menu. Press the switch for one second.
+    Trackpad is normal 
 
-<h3>系统截图</h3>
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/1.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/2.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/3.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/4.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/5.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/6.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/7.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/8.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/9.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/10.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/11.jpg" />
-<img src="https://github.com/molie34/Surface-Pro-6-macOS/blob/master/images/12.jpg" />
+Items not carried out:
 
-<h3>感谢</h3>
-<p>感谢以下人员提供的经验、测试、反馈帮助：</p>
-<p>xjzkp、13956737563、CabbSir、9805xinwen、radonjaw、chase69、Fnckerpoi </p>
-<p>感谢各位开发黑苹果驱动的大神。</p>
-<p>最后感谢翔哥。</p>
+    Volume +-button;
+    Power display;
+    There is no global solution: touch screen, built-in Bluetooth, built-in WiFi, camera;
+    Looking forward to your perfect sharing! 
+
+System screenshot
+
