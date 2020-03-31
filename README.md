@@ -1,4 +1,4 @@
- Surface Pro 6 Black Apple CLOVER profile, world premiere
+ Surface Pro 6 Black (Hackintosh)  Apple CLOVER profile  (Translated From Chinese)
 
 After the MacBook Pro, the Surface Pro6 is a machine I really like. The host is 770g + keyboard 310g + pen 20g = 1100g! Very lightweight. Based on my love of Surface Pro6, I have made 4 tutorials to help more Surface Pro6 users worry free.
 
